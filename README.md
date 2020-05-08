@@ -1,1 +1,1 @@
-# background_generator
+A Background Color Generator Project using Javascript.
