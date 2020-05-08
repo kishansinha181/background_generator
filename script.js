@@ -30,14 +30,18 @@ color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
 
 button.addEventListener("click",function(){
+	var x1 = randomGen();
+	var x2 = randomGen();
 	body.style.background =
 		"linear-gradient(to right, "
-		+ randomGen()
+		+ x1
 		+ ", "
-		+ randomGen()
+		+ x2
 		+ ")";
 
-	css.textContent = body.style.background + ";";	
+	css.textContent = body.style.background + ";";
+	color1.value = x1;
+	color2.value = x2;
 
 
 })
